@@ -23,9 +23,3 @@ In another terminal/shell
 curl "http://localhost:9000/2015-03-31/functions/function/invocations" \
     -d '{"payload":"hello world!"}'
 ```
-
-## Caveat
-
-- I build the project with the `python:3.12-slim` image, but then deploy it in a
-  `public.ecr.aws/lambda/python:3.12` based runtime image. That would most probably
-  create issues for binary dependencies/packages. TBD.

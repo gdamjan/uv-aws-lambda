@@ -1,5 +1,7 @@
 # AWS Lambda python managed by uv
 
+**Obsoleted by:** https://docs.astral.sh/uv/guides/integration/aws-lambda/
+
 This python demo project is managed by [uv](https://docs.astral.sh/uv) -
 the next gen python package and project manager.
 

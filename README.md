@@ -9,9 +9,11 @@ The trick to make this work, is to copy the files/directories from
 `.venv/lib/python${PYTHON_VERSION}/site-packages/` to `/var/task/` flat.
 Also you must specify `--no-editable` in `uv sync` so that the project is not symlinked.
 
-Project created with `uv init --app --package`, which uses the
+Project created with `uv init --build-backend uv --app --package`, which uses the
 [`src/` layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/)
-(which I prefer anyway).
+and the [uv build](https://docs.astral.sh/uv/concepts/build-backend/) system.
+
+It's an opinionated setup, but I don't wanna hear anything against it 😁.
 
 ## Quickstart
 
